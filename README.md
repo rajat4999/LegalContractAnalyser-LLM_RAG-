@@ -1,5 +1,7 @@
 # ⚖️ Legal AI Contract Analyzer
 
+**🚀 Live Demo:** [Try the Legal AI Contract Analyzer here!](https://legal-contract-analyser-gamma.vercel.app/)
+
 Welcome to the **Legal AI Contract Analyzer**! This is a smart web application designed to help people easily understand complex legal contracts. Instead of reading pages of confusing legal jargon, you can simply upload your document, ask questions, and get simple answers along with a breakdown of potential risks. 
 
 It even supports multiple languages, making legal documents accessible to more people!
