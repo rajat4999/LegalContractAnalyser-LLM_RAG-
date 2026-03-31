@@ -1,0 +1,228 @@
+EMPLOYMENT AGREEMENT
+
+This Employment Agreement is made between TechNova Pvt Ltd ("Employer")
+and Rahul Sharma ("Employee").
+
+Position
+The Employee shall work as a Software Engineer.
+
+Salary
+The Employee will receive a salary of INR 12,00,000 per year.
+
+Working Hours
+The Employee shall work 40 hours per week.
+
+Confidentiality
+The Employee must not disclose company trade secrets or confidential data.
+
+Termination
+Either party may terminate this agreement with 30 days written notice.
+
+Leave Policy
+Employees are entitled to 20 paid leave days annually.
+
+Non-Compete
+The employee shall not work for direct competitors for 1 year after leaving the company.
+
+Jurisdiction
+This agreement shall be governed by the laws of India.
+
+
+NON DISCLOSURE AGREEMENT
+
+This Agreement is between Alpha Tech and Beta Analytics.
+
+Purpose
+The parties wish to explore a potential business relationship.
+
+Confidential Information
+Includes business plans, financial information, product designs,
+algorithms, and client lists.
+
+Obligations
+The receiving party must keep the information confidential and
+must not disclose it to any third party.
+
+Duration
+This agreement shall remain valid for 3 years.
+
+Penalty
+Unauthorized disclosure may result in legal action and damages.
+
+Governing Law
+The laws of India shall govern this agreement.
+RESIDENTIAL RENTAL AGREEMENT
+
+This agreement is made between Amit Verma ("Landlord")
+and Neha Gupta ("Tenant").
+
+Property
+Apartment located at 22 MG Road, Bangalore.
+
+Rent
+Monthly rent is INR 25,000 payable before the 5th of each month.
+
+Security Deposit
+Tenant must pay INR 50,000 as refundable deposit.
+
+Maintenance
+Tenant shall maintain the property in good condition.
+
+Termination
+Either party may terminate the agreement with 60 days notice.
+
+Penalty
+Late rent will incur a penalty of INR 500 per day.
+
+Jurisdiction
+Courts of Bangalore shall have jurisdiction.
+SOFTWARE SERVICE AGREEMENT
+
+This agreement is between CodeCraft Pvt Ltd and DigitalMart Ltd.
+
+Services
+Development and maintenance of e-commerce software.
+
+Payment
+Client shall pay INR 1,50,000 per month.
+
+Delivery Timeline
+Project completion within 8 months.
+
+Intellectual Property
+All developed software shall belong to the client.
+
+Termination
+Agreement can be terminated with 30 days notice.
+
+Liability
+Service provider liability is limited to the total project value.
+PRIVACY POLICY
+
+This policy explains how DataHub collects and uses user information.
+
+Information Collected
+Name, email address, IP address, and usage data.
+
+Purpose
+Information is used to improve services and personalize user experience.
+
+Data Protection
+Company implements encryption and security measures.
+
+User Rights
+Users may request deletion of their personal data.
+
+Third-Party Sharing
+Data may be shared with trusted partners for analytics purposes.
+
+Contact
+Users may contact privacy@datahub.com for questions.
+TERMS OF SERVICE
+
+These terms govern the use of the ShopSmart website.
+
+Account Responsibility
+Users are responsible for maintaining account security.
+
+Prohibited Activities
+Users must not engage in fraud, hacking, or misuse of services.
+
+Payments
+All purchases must be completed through authorized payment methods.
+
+Termination
+ShopSmart may suspend accounts that violate these terms.
+
+Liability
+The company is not liable for indirect damages.
+
+Governing Law
+These terms are governed by Indian law.
+
+
+PARTNERSHIP AGREEMENT
+
+This agreement is between Rohan Mehta and Vikram Patel.
+
+Business Purpose
+To operate a digital marketing agency.
+
+Capital Contribution
+Each partner shall invest INR 5,00,000.
+
+Profit Sharing
+Profits shall be shared equally.
+
+Decision Making
+Major decisions require approval from both partners.
+
+Termination
+Partnership may be dissolved with mutual consent.
+
+Dispute Resolution
+Disputes will be resolved through arbitration.
+FREELANCER SERVICE AGREEMENT
+
+Client: BrightAds Agency
+Freelancer: Priya Singh
+
+Services
+Graphic design and branding services.
+
+Payment
+Freelancer will be paid INR 50,000 per project.
+
+Delivery
+Projects must be delivered within 10 days.
+
+Ownership
+All final designs become property of the client.
+
+Termination
+Contract may be terminated by either party with 14 days notice.
+LOAN AGREEMENT
+
+Lender: National Finance Ltd
+Borrower: Arjun Kumar
+
+
+Loan Amount
+INR 5,00,000
+
+Interest Rate
+10% annually.
+
+Repayment
+Borrower must repay the loan in 24 monthly installments.
+
+Late Payment
+Late payments incur a penalty of 2%.
+
+Default
+Failure to pay for 3 months may result in legal recovery action.
+
+Jurisdiction
+Delhi courts shall have jurisdiction.
+VENDOR SUPPLY AGREEMENT
+
+Buyer: MegaRetail Ltd
+Vendor: FreshFarm Suppliers
+
+Products
+Vendor will supply fresh vegetables and fruits.
+
+Delivery
+Goods must be delivered weekly.
+
+Payment Terms
+Buyer will pay invoices within 15 days.
+
+Quality Standards
+Products must meet food safety standards.
+
+Termination
+Agreement may be terminated with 30 days notice.
+
+Penalty
+Failure to deliver goods may result in financial penalties.
