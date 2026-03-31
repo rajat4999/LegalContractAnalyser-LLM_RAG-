@@ -13,14 +13,16 @@
 import {index} from '../config/pinecone.js'
 
 export async function searchVectors(queryEmbedding, sessionId) {
-  const res = await index.query({
-    vector: queryEmbedding,
-    topK: 5,
-    includeMetadata: true,
-    filter: {
-      sessionId: { $eq: sessionId },
-    },
-  });
-
+ const query={
+  vector: queryEmbedding,
+  topK: 5,
+  includeMetadata: true,
+ };
+ if(sessionId){
+  query.filter = {
+    sessionId:{ $eq: sessionId},
+  };
+}
+ const result = await index.query(query);
   return res.matches || [];
 }

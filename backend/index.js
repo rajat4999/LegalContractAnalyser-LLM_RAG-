@@ -63,16 +63,21 @@ app.post("/upload", upload.single("file"), async (req, res) => {
     /*  AUTO DELETE AFTER 10 MIN */
     setTimeout(async () => {
       try {
+        const ids = [];
+
+        for (let i = 0; i < chunks.length; i++) {
+          ids.push(`${sessionId}-chunk-${i}`);
+        }
+
         await index.deleteMany({
-          filter: {
-            sessionId: { $eq: sessionId },
-          },
+          ids: ids,
         });
+
         console.log("Session deleted:", sessionId);
       } catch (err) {
         console.error("Auto delete failed:", err);
       }
-    }, 10 * 60 * 1000);
+    }, 10 * 30 * 1000);
 
     res.json({
       message: "Document indexed successfully",

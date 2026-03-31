@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { Search } from "lucide-react";
+import {useEffect} from "react";
 import ReactMarkdown from "react-markdown";
 import { Bar } from "react-chartjs-2";
 import {
@@ -14,6 +15,7 @@ import {
 ChartJS.register(BarElement, CategoryScale, LinearScale, Tooltip, Legend);
 
 export default function LegalRAGUI() {
+  const [timeLeft, setTimeLeft] = useState(0);
   const [sessionId, setSessionId] = useState(null);
   const [question, setQuestion] = useState("");
   const [answer, setAnswer] = useState("");
@@ -21,17 +23,26 @@ export default function LegalRAGUI() {
   const [loading, setLoading] = useState(false);
   const [clauses, setClauses] = useState([]);
   const [file, setFile] = useState(null);
+  useEffect(() => {
+    if (timeLeft <= 0) return;
+    const interval = setInterval(() => {
+      setTimeLeft((prev) => prev - 1);
+    }, 1000);
+    return () => clearInterval(interval);
+  }, [timeLeft]);
+
+  function formatTime(seconds) {
+    const min = Math.floor(seconds / 60);
+    const sec = seconds % 60;
+    return `${min}:${sec < 10 ? "0" : ""}${sec}`;
+  }
   async function askQuestion() {
     if (!question) return;
-    if (!sessionId) {
-      alert("Please upload a document first");
-      return;
-    }
     setLoading(true);
     setAnswer("");
     setClauses([]);
 
-    const res = await fetch("http://localhost:3000/query", {
+    const res = await fetch("https://legalcontractanalyser.onrender.com/query", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -50,7 +61,7 @@ export default function LegalRAGUI() {
     setAnswer("");
     setClauses([]);
 
-    const res = await fetch("http://localhost:3000/query", {
+    const res = await fetch("https://legalcontractanalyser.onrender.com/query", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -79,12 +90,14 @@ export default function LegalRAGUI() {
     setAnswer("");
     setClauses([]);
 
-    const res=await fetch("http://localhost:3000/upload", {
+    const res=await fetch("https://legalcontractanalyser.onrender.com/upload", {
       method: "POST",
       body: formData,
     });
     const data = await res.json();
+
     setSessionId(data.sessionId);
+    setTimeLeft(10*60); // 10 minutes to ask questions after upload0
     alert("Document Indexed Successfully");
     setLoading(false);
   }
@@ -154,6 +167,17 @@ export default function LegalRAGUI() {
             Upload Contract
           </button>
         </div>
+        {sessionId && timeLeft > 0 && (
+          <p style={{ color: "#fbbf24", marginTop: "10px" }}>
+            Session expires in: {formatTime(timeLeft)}
+          </p>
+        )}
+
+        {sessionId && timeLeft === 0 && (
+          <p style={{ color: "#f87171", marginTop: "10px" }}>
+            Session expired. Please re-upload document.
+          </p>
+        )}
         <div style={{ marginBottom: "10px" }}>
           {" "}
           <h2 style={{ color: "red" }}>Select Your Language</h2>

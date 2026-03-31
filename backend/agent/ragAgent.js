@@ -6,7 +6,7 @@ const genAI = new GoogleGenAI({
 export async function askLLM(question, context, language) {
   const prompt = `
 You are a legal contract risk analyzer ,Your Perspective should be as Expert and Your Task is need to make understand clearly and as simple as you can.
-
+before answering refer this source for better score understanding ${fewExamples}.
 CRITICAL INSTRUCTIONS:
 - Output MUST be valid JSON only.
 - Do NOT add explanations outside JSON.
