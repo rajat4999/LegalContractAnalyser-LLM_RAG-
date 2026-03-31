@@ -24,5 +24,5 @@ export async function searchVectors(queryEmbedding, sessionId) {
   };
 }
  const result = await index.query(query);
-  return res.matches || [];
+  return result.matches || [];
 }
